@@ -1,0 +1,31 @@
+
+<div class= 'container'>
+    <div class= 'input'>
+      <h1 class='input-header'> Wizer </h1>
+        <div class="example-form">
+          <mat-form-field appearance="fill" class="password-input">
+            <mat-icon matSuffix>account_balance</mat-icon>
+            <input [(ngModel)]="branch"  matInput placeholder="Branch" >
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="username-input">
+            <mat-icon matSuffix>account_circle</mat-icon>
+            <input [(ngModel)]="username" matInput placeholder="Username" >
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="password-input">
+            <mat-icon matSuffix>lock</mat-icon>
+            <input [(ngModel)]="password"  type='password' matInput placeholder="Password" >
+          </mat-form-field>
+          <mat-form-field appearance="fill" class='dropdown'>
+            <mat-label>User Role</mat-label>
+            <select [(ngModel)]="role"  matNativeControl required>
+              <option value="ADMIN">Admin</option>
+              <option value="BRANCHMANAGER">Branch Manager</option>
+              <option value="LOANOFFICER">Loan Officer</option>
+            </select>
+           </mat-form-field>
+           <button mat-raised-button (click)="register()" class='register-button' >Register</button>
+        </div>
+        <p class= 'login-link' >Already have an account? <a routerLink='/'>Login</a></p>
+    </div>
+</div>

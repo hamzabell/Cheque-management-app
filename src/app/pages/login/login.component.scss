@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+    background-color:  #BFBFBF;
+
+    .input {
+        display: block;
+        height: 52%;
+        width: 40%;
+        padding: 3%;
+        border-radius: 5%;
+        background-color: #FFFFFF;
+        box-shadow: 5px 5px 5px grey ;
+        
+        .input-header{
+            margin-left: 38%;
+            font-family: 'Lobster', cursive;
+        }
+
+        .password-input {
+            width: 100%;
+        }
+
+        .username-input {
+            width: 100%;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        .register-link {
+            font-family: 'Hepta Slab';
+            margin-left: 15%;
+        }
+        .login-button {
+            width: 100%;
+            margin-bottom: 5%;
+            box-shadow: 1px 3px 2px gray;
+            background-color: #8AB0AB;
+            color: #FFFFFF;
+        }
+    }
+}

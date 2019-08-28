@@ -1,0 +1,19 @@
+
+<div class= 'container'>
+    <div class= 'input'>
+      <h1 class='input-header'> Wizer </h1>
+        <div class="example-form">
+          <mat-form-field appearance="fill" class="username-input">
+            <mat-icon matSuffix>account_circle</mat-icon>
+            <input  matInput [(ngModel)]="username" placeholder="Username" >
+          </mat-form-field>
+
+          <mat-form-field appearance="fill" class="password-input">
+            <mat-icon matSuffix>lock</mat-icon>
+            <input matInput [(ngModel)]="password" type='password' placeholder="Password" >
+          </mat-form-field> 
+          <button mat-raised-button  (click)= "login()" class='login-button' >Login</button>
+        </div>
+        <p class= 'register-link'>Don't have an Account? <a  routerLink='/register'>Register</a></p>
+    </div>
+</div>

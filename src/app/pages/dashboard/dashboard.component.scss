@@ -1,0 +1,74 @@
+
+.sidenav {
+    height: 100%;
+    min-width: 4%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #6C91BF;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: grid;
+    justify-content: center;
+    box-shadow: 1px 2px 3px gray;
+    .mat-icon{
+      margin-right: 13px;
+    }
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .side-header{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 150%;
+    margin-left: 20%;
+  }
+
+  .mat-list-item {
+    color: white;
+    
+    .mat-button {
+      color:white;
+      width: 100%;
+      font-family: 'Oswald';
+    }
+  }
+  .main-header {
+    font-size: 120%;
+    font-family: 'Lexend Deca';
+    margin-left:1%;
+  }
+
+
+  table {
+    width: 100%;
+  }
+  
+  .mat-form-field {
+    font-size: 14px;
+    width: 100%;
+  }
