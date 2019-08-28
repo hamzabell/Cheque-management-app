@@ -1,0 +1,22 @@
+<div class="modal-body"> 
+<h1 mat-dialog-title>Assign Cheque</h1>
+<div mat-dialog-content>
+    <mat-form-field appearance="fill" >
+        <mat-icon matSuffix>account_balance</mat-icon>
+        <input  matInput [(ngModel)]="bankName" placeholder="Bank Name" >
+    </mat-form-field>
+    <mat-form-field appearance="fill" >
+        <mat-icon matSuffix>format_list_numbered</mat-icon>
+        <input  matInput type="number" [(ngModel)]="startNumber" placeholder="Start Number" >
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+        <mat-icon matSuffix>format_list_numbered</mat-icon>
+        <input  matInput type="number" [(ngModel)]="endNumber" placeholder="End Number" >
+    </mat-form-field>
+  
+</div>
+<div class="actions" mat-dialog-actions>
+  <button mat-raised-button  (click)= "assign()" color="primary" class='login-button' >Assign</button>
+  <button mat-button [mat-dialog-close]="" >close</button>
+</div>
+</div>

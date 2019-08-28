@@ -18,7 +18,9 @@
 </div>
 
 <div class="main">
-  <h1 class="main-header">Cheques</h1>
+  <h1 class="main-header">Cheques
+  <button mat-raised-button class="assign" (click)="openDialog()" color="primary">Assign a Cheque</button>
+  </h1>
 
 <mat-form-field>
   <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">

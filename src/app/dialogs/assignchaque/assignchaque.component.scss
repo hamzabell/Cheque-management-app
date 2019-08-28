@@ -1,0 +1,15 @@
+.modal-body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-family: 'Oswald';
+    }
+    .mat-form-field {
+        width: 100%;
+    }
+    .actions {
+        float: right;
+    }
+}

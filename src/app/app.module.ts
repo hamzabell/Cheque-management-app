@@ -22,8 +22,9 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
-import {MatTableModule} from '@angular/material';
-import { ChequesComponent } from './pages/cheques/cheques.component'
+import {MatTableModule, MatDialogModule} from '@angular/material';
+import { ChequesComponent } from './pages/cheques/cheques.component';
+import { AssignchaqueComponent } from './dialogs/assignchaque/assignchaque.component'
 
 
 
@@ -34,7 +35,8 @@ import { ChequesComponent } from './pages/cheques/cheques.component'
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    ChequesComponent
+    ChequesComponent,
+    AssignchaqueComponent
   ],
   imports: [
     BrowserModule,
@@ -55,9 +57,11 @@ import { ChequesComponent } from './pages/cheques/cheques.component'
     MatToolbarModule,
     MatSidenavModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [AssignchaqueComponent],
 })
 export class AppModule { }
